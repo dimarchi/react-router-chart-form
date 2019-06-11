@@ -44,7 +44,7 @@ const City = (props) => {
                 <table>
                     <tbody>
                         <tr><th>City:</th><td>{props.city}</td><th>Graphical representation of wind direction:</th></tr>
-                        <tr><th>Temperature (in Celsius):</th><td>{props.data.temps[0]}</td><td rowspan="8" className="windgraph"><Canvas degrees={props.data.windDegrees[0]} width={150} height={150} title={`Wind direction: ${degToCardinal(props.data.windDegrees[0])} (${props.data.windDegrees[0]} degrees)`} /></td></tr>
+                        <tr><th>Temperature (in Celsius):</th><td>{props.data.temps[0]}</td><td rowSpan="8" className="windgraph"><Canvas degrees={props.data.windDegrees[0]} width={150} height={150} title={`Wind direction: ${degToCardinal(props.data.windDegrees[0])} (${props.data.windDegrees[0]} degrees)`} /></td></tr>
                         <tr><th>Pressure (in hPa):</th><td>{props.data.pressures[0]}</td></tr>
                         <tr><th>Humidity (in %):</th><td>{props.data.humidities[0]}</td></tr>
                         <tr><th>Wind (meter / seconds):</th><td>{props.data.winds[0]}</td></tr>
